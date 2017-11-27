@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<header>
+    <img class="image-header" src="https://goo.gl/vGMjG1"/>
+</header>
+<section class="about">
+    <h2>Acerca</h2>
+    <p>
+       Norma Monserrat Bustamante Laferte (Viña del Mar, Región de Valparaíso; 2 de mayo de 1983), 
+       más conocida como Mon Laferte, es una cantante y compositora chilena. Toca diversos instrumentos 
+       musicales y sus principales influencias musicales son el rock, blues y pop.
+    </p>
+</section>
+<section class="images">
+    <div class="row">
+        <div class="col-md-4"><img src="https://goo.gl/EXn7Yv"/></div>
+        <div class="col-md-4"><img src="https://goo.gl/iqg7Yv"/></div>
+        <div class="col-md-4"><img src="https://goo.gl/5yyASM"/></div>
+    </div>
+</section>
+
+
+<br/>
+<section class="login">
+    <h2>¿Quieres conocer donde se presentará?</h2>
+    <p>¿Aún no tienes cuenta?</p><a href="/Account/SignUp">¡Registrate Ahora!</a>
+    <p>¿Ya tienes cuenta?</p>@Html.ActionLink("Ingresar!", "LogIn", "Account")
+</section>
+
+
+
